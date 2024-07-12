@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'IBMPlexMono';
+    src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    font-family: 'IBMPlexMono', monospace;
+    background-color: #000;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 1em;
+    color: #FFF;
+}
+
+h2.header {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    margin: 20px 0;
+    border-bottom: 2px solid #FFF;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loginPage {
+    text-align: center;
+    margin-top: 2em;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginPage h2 {
+    font-size: 1.8em;
+    color: #FFF;
+    margin-bottom: 1em;
+}
+
+.loginPage form {
+    width: 100%;
+    max-width: 250px;
+}
+
+.loginPage input[type="text"],
+.loginPage input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #000;
+    box-sizing: border-box;
+}
+
+.loginPage button {
+    width: 40%;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #FFF 50%, #4b4c46 50%);
+    background-size: 200% 100%;
+    transition: background-position 0.3s, background-color 0.3s;
+}
+
+.loginPage button:hover {
+    background-position: right;
+}
+
+#logoutBtn {
+    padding: 12px 24px;
+    border: none;
+    background-color: #484747;
+    color: #FFF;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#logoutBtn:hover {
+    background-color: #E64A19;
+}
+
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2em;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.userinfo {
+    background-color: rgba(176, 156, 156, 0.1);
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin-right: 2em;
+}
+
+.graphs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.pieGraph, .graph1 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    background-color: rgba(176, 156, 156, 0.1);
+    width: 400px;
+    height: 350px; 
+    overflow: hidden;
+}
+
+.pieGraph {
+    height: 720px; 
+}
+
+.pieGraph canvas {
+    background-color: rgba(176, 156, 156, 0.1);
+    border-radius: 5px;
+}

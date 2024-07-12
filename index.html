@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <section id="login">
+        <h1>GraphQL</h1>
+        <div class="loginPage">
+            <p id="loginError"></p>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" placeholder="Enter your username"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" placeholder="Enter your password"><br>
+            <button onClick="login()">Sign in</button>
+        </div>
+    </section>
+    <section id="main" style="display: none;">
+        <h2 class="header">GraphQL</h2>
+        <div class="content-wrapper">
+            <div class="userinfo">
+                <h2>User Info</h2>
+                <p>Username: <span id="displayUser"></span></p>
+                <p>XP: <span id="xp"></span></p>
+                <div class="auditbox">
+                    <p>Audit ratio: <span id="auditratio"></span></p>
+                    <p class="secondary">Audits done: <span id="auditdone"></span></p>
+                    <p class="secondary">Audits received: <span id="auditrecieved"></span></p>
+                    <button id="logoutBtn" onclick="logOut()">Log Out</button>
+                </div>
+            </div>
+
+            <div class="graphs">
+                <div class="graph1">
+                    <h2>XP</h2>
+                    <svg id="xpGraph" width="90%" height="240"></svg>
+                </div>
+                <div class="pieGraph">
+                    <h2>Projects</h2>
+                    <canvas id="projectPieChart" width="300" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

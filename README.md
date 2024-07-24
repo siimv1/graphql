@@ -1,5 +1,5 @@
 # GraphQL
-Objevtive of this project was to learn graphQL. Here is youre own profile page if you log in with your intra user credentials. After logging in you can see your user info, xp progression and xp by projects.
+Objective of this project was to learn graphQL. Here is youre own profile page if you log in with your intra user credentials. After logging in you can see your user info, xp progression and xp by projects.
 
 # How to
 1. Clone the repository to your local machine.
@@ -8,3 +8,4 @@ Objevtive of this project was to learn graphQL. Here is youre own profile page i
 4. Open your browser and go to http://localhost:PORT
 5. Log in with intra credentials
 
+We did it together with Tanel Takk and Siim-Tõnis Vainrauh
